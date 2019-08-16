@@ -1,0 +1,18 @@
+{"app":"Process:file touched success.","pid":"50309"}
+{"server  addr:":"http://127.0.0.1:10000"}
+{"app":0}
+{"app":"http    Listen failed","error":"http: Server closed"}
+{"app":"Process:file deleted success.","pid":"50309"}
+
+{"app":"Process:file touched success.","pid":"50511"}{"app":"Process:file touched success.","pid":"50600"}{"app":"Process:file touched success.","pid":"51102"}
+{"server  addr:":"http://127.0.0.1:10000"}
+{"app":0}
+{"app":"http    Listen failed","error":"http: Server closed"}
+{"app":"Process:file deleted success.","pid":"51102"}
+
+{"app":"Process:file touched success.","pid":"51394"}
+{"server  addr:":"http://127.0.0.1:10000"}
+{"app":0}
+{"app":"http    Listen failed","error":"http: Server closed"}
+{"app":"Process:file deleted success.","pid":"51394"}
+
