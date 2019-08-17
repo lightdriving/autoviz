@@ -27,9 +27,9 @@ func Init() {
 			}
 			rr := rand.New(rand.NewSource(time.Now().UnixNano()))
 			for {
-				time.Sleep(1000)
+				time.Sleep(1000/60)
 				positions:=make([]float32,0)
-				for i:=0;i<1000;i++{
+				for i:=0;i<10;i++{
 					p:=make([]float32,3)
 					for j:=0;j<3;j++{
 						p[j]=10*rr.Float32()*float32(math.Pow(-1,float64(i)))

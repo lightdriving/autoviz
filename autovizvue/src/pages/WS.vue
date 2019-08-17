@@ -27,7 +27,7 @@
 
             this.app = new light3d.Singlecolor(this.l.gl, [0.9, 0.0, 0.0, 1.0], "mvp", "3.1").linkProgram().useProgram();
 
-            let vertices = new light3d.Polygon(1000, 10, "Arrays", WebGLRenderingContext.POINTS).position;
+            let vertices = new light3d.Polygon(10, 10, "Arrays", WebGLRenderingContext.LINE_LOOP).position;
 
             this.position_b = this.l.data(vertices);
             this.app.setattr(WebGLRenderingContext.ARRAY_BUFFER,  this.position_b, this.app.gl_Position, 3);
@@ -60,7 +60,7 @@
                 this.l.clear();
                 this.l.updatedata(WebGLRenderingContext.ARRAY_BUFFER, this.position_b,v)
                 this.l.gl.bindBuffer(WebGLRenderingContext.ARRAY_BUFFER, this.position_b);
-                this.l.drawArrays(WebGLRenderingContext.POINTS, v.length/3);
+                this.l.drawArrays(WebGLRenderingContext.LINE_LOOP, v.length/3);
                 this.l.flush();
             }
         }
