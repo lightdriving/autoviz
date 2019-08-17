@@ -6,6 +6,11 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/e',
+      name: 'e',
+      component: () => import(/* webpackChunkName: "about" */ './pages/echartgl.vue')
+    },
+    {
       path: '/',
       name: 'ws',
       component: () => import(/* webpackChunkName: "about" */ './pages/WS.vue')
